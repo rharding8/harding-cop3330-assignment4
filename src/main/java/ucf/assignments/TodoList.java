@@ -17,7 +17,7 @@ public class TodoList extends Application {
   @Override
   public void start(Stage primaryStage) {
     try {
-      Parent root = FXMLLoader.load(getClass().getResource("TodoList.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("SingleList.fxml"));
       Scene scene = new Scene(root);
       primaryStage.setScene(scene);
       primaryStage.setTitle("To-do Lister");
