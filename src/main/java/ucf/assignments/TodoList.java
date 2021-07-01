@@ -20,7 +20,7 @@ public class TodoList extends Application {
       Parent root = FXMLLoader.load(getClass().getResource("TodoList.fxml"));
       Scene scene = new Scene(root);
       primaryStage.setScene(scene);
-      primaryStage.setTitle("TestWindow");
+      primaryStage.setTitle("To-do Lister");
       primaryStage.show();
 
     } catch (IOException e) {
