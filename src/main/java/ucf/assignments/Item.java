@@ -3,12 +3,12 @@ package ucf.assignments;
 public class Item {
   private String description;
   private String date;
-  private boolean completeness;
+  private boolean completion;
 
-  public Item(String description, String date, boolean completeness) {
+  public Item(String description, String date, boolean completion) {
     this.description = description;
     this.date = date;
-    this.completeness = completeness;
+    this.completion = completion;
   }
 
   public String getDescription() {
@@ -27,12 +27,12 @@ public class Item {
     this.date = date;
   }
 
-  public boolean isCompleteness() {
-    return completeness;
+  public boolean isComplete() {
+    return completion;
   }
 
-  public void setCompleteness(boolean completeness) {
-    this.completeness = completeness;
+  public void setCompletion(boolean completion) {
+    this.completion = completion;
   }
 
   @Override

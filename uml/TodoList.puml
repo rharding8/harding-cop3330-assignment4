@@ -7,7 +7,42 @@ class TodoList {
 }
 class TodoListController
 
-javafx.Application <|-- TodoList
+class SingleListController {
+    FXML Fields
+    ItemList itemList
+    backButtonClicked()
+    addButtonClicked()
+    removeButtonClicked()
+    saveButtonClicked()
+    editButtonClicked()
+    addToList()
+    removeFromList()
+    updateItem()
+    initList()
+    refresh()
+}
+
+class Item {
+    String description
+    String date
+    Boolean completion
+    Item()
+    getDescription()
+    setDescription()
+    getDate()
+    setDate()
+    isComplete()
+    setCompletion()
+    toString()
+}
+
+class ItemList
+
+javafx.Application <|- TodoList
 TodoList -- TodoListController
+TodoListController -- SingleListController
+TodoListController -- ItemList
+SingleListController - ItemList
+ItemList - Item
 
 @enduml
