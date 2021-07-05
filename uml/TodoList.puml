@@ -5,7 +5,11 @@ class TodoList {
     main()
     start()
 }
-class TodoListController
+
+class TodoListController {
+    FXML Fields
+    ItemList: list
+}
 
 class SingleListController {
     FXML Fields
@@ -36,7 +40,13 @@ class Item {
     toString()
 }
 
-class ItemList
+class ItemList {
+    String title
+    Item: items
+    ItemList()
+    getTitle()
+    setTitle()
+}
 
 javafx.Application <|- TodoList
 TodoList -- TodoListController

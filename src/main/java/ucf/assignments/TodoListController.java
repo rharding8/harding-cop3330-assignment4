@@ -4,14 +4,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -38,9 +33,9 @@ public class TodoListController {
   ObservableList<ItemList> list = FXCollections.observableArrayList();
 
   @FXML
-  public void addListClicked(ActionEvent actionEvent) throws IOException {
-    // Add new ItemList with title given in titleField to list
-    // Set listOfLists to list
+  public void addListClicked(ActionEvent actionEvent) {
+    // Call addList()
+    // Call refresh()
   }
 
   @FXML
@@ -53,8 +48,8 @@ public class TodoListController {
 
   @FXML
   public void removeListClicked(ActionEvent actionEvent) {
-    // Remove the ItemList from list
-    // Refresh the listOfLists
+    // Call removeList with the ItemList selected in listOfLists
+    // refresh()
   }
 
   @FXML
@@ -63,5 +58,18 @@ public class TodoListController {
 
   @FXML
   public void loadListClicked(ActionEvent actionEvent) {
+  }
+
+  public void addList() {
+    // Add new ItemList with title given in titleField to list
+  }
+
+  public void removeList(ItemList i) {
+    // Remove the element i from list
+  }
+
+  public void refresh() {
+    // Set all fields to null
+    // Set listOfLists' items to list
   }
 }
