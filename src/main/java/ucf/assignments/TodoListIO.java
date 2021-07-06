@@ -23,4 +23,12 @@ public class TodoListIO {
     // Return ItemList
     return null;
   }
+
+  public static ObservableList<ItemList> loadMultipleLists(String path) {
+    // Create an ObservableList of ItemLists
+    // for each Json file in the folder given by path
+      // add return value of loadList (Using path + filename) to ObservableList
+    // Return ObservableList
+    return null;
+  }
 }

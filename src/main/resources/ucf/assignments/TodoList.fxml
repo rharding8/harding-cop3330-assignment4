@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <SplitPane dividerPositions="0.5" orientation="VERTICAL" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.TodoListController">
    <items>
       <SplitPane dividerPositions="0.5">
@@ -15,9 +14,10 @@
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="200.0">
                <children>
                   <Button fx:id="addListButton" layoutX="69.0" layoutY="79.0" mnemonicParsing="false" onAction="#addListClicked" text="Add List" />
-                  <Button fx:id="editListButton" layoutX="69.0" layoutY="174.0" mnemonicParsing="false" onAction="#editListClicked" text="Edit List" />
-                  <Button fx:id="removeListButton" layoutX="57.0" layoutY="275.0" mnemonicParsing="false" onAction="#removeListClicked" text="Remove List" />
+                  <Button fx:id="editListButton" layoutX="69.0" layoutY="161.0" mnemonicParsing="false" onAction="#editListClicked" text="Edit List" />
+                  <Button fx:id="removeListButton" layoutX="58.0" layoutY="327.0" mnemonicParsing="false" onAction="#removeListClicked" text="Remove List" />
                   <TextField fx:id="titleField" layoutX="20.0" layoutY="43.0" promptText="Title of New List:" />
+                  <Button fx:id="updateTitleButton" layoutX="58.0" layoutY="245.0" mnemonicParsing="false" onAction="#updateTitleClicked" text="Update Title" />
                </children>
             </AnchorPane>
          </items>
@@ -27,7 +27,7 @@
             <Button fx:id="saveListsButton" layoutX="80.0" layoutY="17.0" mnemonicParsing="false" onAction="#saveListsClicked" text="Save All Lists" />
             <Button fx:id="loadListButton" layoutX="80.0" layoutY="61.0" mnemonicParsing="false" onAction="#loadListClicked" text="Load List" />
             <TextField fx:id="saveListField" layoutX="194.0" layoutY="17.0" prefHeight="26.0" prefWidth="337.0" promptText="Path to Folder:" />
-            <TextField fx:id="loadListField" layoutX="196.0" layoutY="60.0" prefHeight="26.0" prefWidth="337.0" promptText="Path to File:" />
+            <TextField fx:id="loadListField" layoutX="196.0" layoutY="60.0" prefHeight="26.0" prefWidth="337.0" promptText="Path to File/Folder:" />
          </children>
       </AnchorPane>
    </items>

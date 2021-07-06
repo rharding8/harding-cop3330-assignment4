@@ -22,23 +22,23 @@ public class SingleListController {
   @FXML
   public Button sortButton;
   @FXML
-  Button addButton;
+  public Button addButton;
   @FXML
-  TextField dateField;
+  public TextField dateField;
   @FXML
-  TextField descriptionField;
+  public TextField descriptionField;
   @FXML
-  CheckBox completeBox;
+  public CheckBox completeBox;
   @FXML
   public Button saveButton;
   @FXML
   public Button updateButton;
   @FXML
-  Button removeButton;
+  public Button removeButton;
   @FXML
-  Button backButton;
+  public Button backButton;
   @FXML
-  ListView<Item> itemDisplay;
+  public ListView<Item> itemDisplay;
 
   // ItemList to be given from TodoListController
   ItemList itemList;
@@ -66,7 +66,7 @@ public class SingleListController {
 
   @FXML
   public void saveButtonClicked(ActionEvent actionEvent) {
-    // Call saveList in TodoListIO using path from pathField
+    // Call saveList in TodoListIO using path from pathField and itemList
   }
 
   @FXML

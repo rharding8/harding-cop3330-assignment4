@@ -14,6 +14,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 public class TodoListController {
+
   @FXML
   public ListView<ItemList> listOfLists;
   @FXML
@@ -32,6 +33,8 @@ public class TodoListController {
   public TextField saveListField;
   @FXML
   public TextField loadListField;
+  @FXML
+  public Button updateTitleButton;
 
   ObservableList<ItemList> list = FXCollections.observableArrayList();
 
@@ -46,6 +49,7 @@ public class TodoListController {
     // Create a new scene with SingleList.fxml
     // Instantiate SingleListController (SLC)
     // Call initList in SLC using the selected ItemList
+    // Show SLC with the title of the window being the title of the ItemList
   }
 
   @FXML
@@ -56,10 +60,15 @@ public class TodoListController {
 
   @FXML
   public void saveListsClicked(ActionEvent actionEvent) {
+    // Call saveAllLists() in TodoListIO using the path in saveListField and list
   }
 
   @FXML
   public void loadListClicked(ActionEvent actionEvent) {
+    // If path in loadListField leads to folder
+      // Set list equal to the return value of loadMultipleLists() in TodoListIO
+    // Else
+      // Add return value of loadList() in TodoListIO to list
   }
 
   public void addList() {
@@ -73,5 +82,15 @@ public class TodoListController {
   public void refresh() {
     // Set all fields to null
     // Set listOfLists' items to list
+  }
+
+  @FXML
+  public void updateTitleClicked(ActionEvent actionEvent) {
+    // Call updateTitle using selected ItemList from listOfLists
+    // Call refresh()
+  }
+
+  public void updateTitle(ItemList i) {
+    // Set title in i to text in titleField
   }
 }

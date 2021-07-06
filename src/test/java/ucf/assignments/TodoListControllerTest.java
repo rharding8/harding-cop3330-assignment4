@@ -34,4 +34,13 @@ class TodoListControllerTest {
     // Call refresh()
     // Assert that default values have been restored.
   }
+
+  @Test
+  void updateTitle() {
+    // Instantiate TodoListController
+    // Set list to some set of test data
+    // Set the titleField to a new title
+    // Call updateTitle() with an ItemList in list
+    // Assert that the title of that ItemList is now equal to the titleField
+  }
 }
