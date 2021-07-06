@@ -1,33 +1,46 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Ryan Harding
+ */
+
 package ucf.assignments;
 
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class ItemList {
   private String title;
   private ObservableList<Item> items;
 
   public ItemList(String title) {
-    this.title = title;
-    items = FXCollections.observableArrayList();
+    // Set this.title to given title
+    // Initialize items as an observableArrayList
   }
 
   public String getTitle() {
-    return title;
+    // Return title
+    return "";
   }
 
   public void setTitle(String title) {
-    this.title = title;
+    // Set this.title to given title
   }
 
   public ObservableList<Item> getItems() {
-    return items;
+    // Return items
+    return null;
   }
 
   public void addItem(Item i) {
-    items.add(i);
+    // Add i to items
+  }
+
+  public ObservableList<Item> sortList(boolean completion) {
+    // Create new ObservableList
+    // for every Item in items
+      // if Item.isComplete() is equal to completion
+        // add Item to new list
+    // Return new List
+    return null;
   }
 }

@@ -10,7 +10,7 @@
 
 <SplitPane dividerPositions="0.5, 0.5, 0.5" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.SingleListController">
    <items>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="712.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="850.0">
          <children>
             <Button fx:id="addButton" layoutX="8.0" layoutY="12.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Add Item" />
             <TextField fx:id="dateField" layoutX="99.0" layoutY="12.0" prefHeight="26.0" prefWidth="135.0" promptText="Date (YYYY-MM-DD)" />
@@ -19,20 +19,21 @@
             <Separator layoutX="238.0" layoutY="1.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="6.0" />
             <Separator layoutX="597.0" orientation="VERTICAL" prefHeight="50.0" prefWidth="6.0" />
             <CheckBox fx:id="completeBox" layoutX="613.0" layoutY="16.0" mnemonicParsing="false" text="Complete?" />
+            <Button fx:id="sortButton" layoutX="711.0" layoutY="12.0" mnemonicParsing="false" onAction="#sortButtonClicked" text="Sort By Completion" />
          </children>
       </AnchorPane>
-      <ListView fx:id="itemList" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="891.0" />
+      <ListView fx:id="itemDisplay" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="891.0" />
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="891.0">
          <children>
             <Button fx:id="saveButton" layoutX="44.0" layoutY="12.0" mnemonicParsing="false" onAction="#saveButtonClicked" text="Save List" />
-            <TextField fx:id="pathField" layoutX="139.0" layoutY="12.0" prefHeight="26.0" prefWidth="534.0" promptText="File Path:" />
+            <TextField fx:id="pathField" layoutX="139.0" layoutY="12.0" prefHeight="26.0" prefWidth="680.0" promptText="File Path:" />
          </children>
       </AnchorPane>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="891.0">
          <children>
-            <Button fx:id="removeButton" layoutX="317.0" layoutY="13.0" mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Remove" />
-            <Button fx:id="backButton" layoutX="594.0" layoutY="12.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Back" />
-            <Button fx:id="editButton" layoutX="44.0" layoutY="13.0" mnemonicParsing="false" onAction="#editButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Edit Item" />
+            <Button fx:id="removeButton" layoutX="357.0" layoutY="13.0" mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Remove" />
+            <Button fx:id="backButton" layoutX="688.0" layoutY="12.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Back" />
+            <Button fx:id="updateButton" layoutX="44.0" layoutY="13.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="26.0" prefWidth="89.0" text="Update Item" />
          </children>
       </AnchorPane>
    </items>

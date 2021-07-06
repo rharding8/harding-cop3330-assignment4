@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Ryan Harding
+ */
+
 package ucf.assignments;
 
 import javafx.collections.FXCollections;
@@ -7,8 +12,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-
-import java.io.IOException;
 
 public class TodoListController {
   @FXML
@@ -39,11 +42,10 @@ public class TodoListController {
   }
 
   @FXML
-  public void editListClicked(ActionEvent actionEvent) throws IOException {
-    // Use SingleList.fxml to create a new window
-    // Instantiate the controller
-    // Set the list in that controller to the list chosen
-    // Open the selected ItemList object in that window
+  public void editListClicked(ActionEvent actionEvent) {
+    // Create a new scene with SingleList.fxml
+    // Instantiate SingleListController (SLC)
+    // Call initList in SLC using the selected ItemList
   }
 
   @FXML

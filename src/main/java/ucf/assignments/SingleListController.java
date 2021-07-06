@@ -1,5 +1,11 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 4 Solution
+ *  Copyright 2021 Ryan Harding
+ */
+
 package ucf.assignments;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -14,6 +20,8 @@ public class SingleListController {
   @FXML
   public TextField pathField;
   @FXML
+  public Button sortButton;
+  @FXML
   Button addButton;
   @FXML
   TextField dateField;
@@ -24,7 +32,7 @@ public class SingleListController {
   @FXML
   public Button saveButton;
   @FXML
-  public Button editButton;
+  public Button updateButton;
   @FXML
   Button removeButton;
   @FXML
@@ -34,40 +42,42 @@ public class SingleListController {
 
   // ItemList to be given from TodoListController
   ItemList itemList;
+  // ObservableList to store a sorted version of the list in
+  ObservableList<Item> sortedList;
 
   @FXML
   public void backButtonClicked(ActionEvent actionEvent) {
-    // Set the scene to TodoList
-    // Show scene
-    // (OPTIONAL!!!) Return itemList back to TodoListController to ensure saved progress
+    // Set stage to TodoList.fxml
+    // Show stage
+    // Close SingleList
   }
 
   @FXML
   public void addButtonClicked(ActionEvent actionEvent) {
-    // call addToList()
-    // refresh fields
+    // Call addToList()
+    // Call refresh()
   }
 
   @FXML
   public void removeButtonClicked(ActionEvent actionEvent) {
-    // call removeFromList() using selection from itemDisplay
-    // refresh fields
+    // Call removeFromList() using selection from itemDisplay
+    // Call refresh()
   }
 
   @FXML
   public void saveButtonClicked(ActionEvent actionEvent) {
-    // LAST THING TO DO!!
+    // Call saveList in TodoListIO using path from pathField
   }
 
   @FXML
-  public void editButtonClicked(ActionEvent actionEvent) {
-    // call updateItem() using selection from itemDisplay
-    // refresh fields
+  public void updateButtonClicked(ActionEvent actionEvent) {
+    // Call updateItem() using selection from itemDisplay
+    // Call refresh()
   }
 
   public void addToList() {
-    // Bind the complete checkbox to a boolean value
-    // Add new Item to the list "items" in itemList using the fields entered and boolean value
+    // Bind completeBox to boolean value
+    // Add new Item to items in itemList using the fields entered and boolean value
   }
 
   public void removeFromList(Item i) {
@@ -75,8 +85,8 @@ public class SingleListController {
   }
 
   public void updateItem(Item i) {
-    // Bind the complete checkbox to a boolean value
-    // Use the setter methods of Item in i to set the values to the fields entered and boolean value
+    // Bind completeBox to boolean value
+    // Edit i using the fields entered and boolean value
   }
 
   public void initList(ItemList iL) {
@@ -85,8 +95,23 @@ public class SingleListController {
 
   @FXML
   public void refresh() {
-    // set description and date fields to "null"
-    // set complete checkbox to indeterminate
-    // set the items in itemDisplay equal to "items" in itemList
+    // Set description and date fields to "null"
+    // Set completeBox to false
+    // Set the items in itemDisplay equal to items in itemList
+  }
+
+  @FXML
+  public void sortButtonClicked(ActionEvent actionEvent) {
+    // Call sortItemList()
+    // Call refresh()
+    // Set items in itemDisplay equal to sortedList
+  }
+
+  public void sortItemList() {
+    // If itemDisplay is already showing sortedList
+      // Set sortedList equal to the original list, un-sorting it
+      // Return
+    // Bind completeBox to boolean value
+    // Set sortedList equal to return value of itemList.sortList using the boolean value
   }
 }
