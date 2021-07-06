@@ -39,6 +39,8 @@ public class SingleListController {
   public Button backButton;
   @FXML
   public ListView<Item> itemDisplay;
+  @FXML
+  public Button dateSortButton;
 
   // ItemList to be given from TodoListController
   ItemList itemList;
@@ -112,6 +114,19 @@ public class SingleListController {
       // Set sortedList equal to the original list, un-sorting it
       // Return
     // Bind completeBox to boolean value
-    // Set sortedList equal to return value of itemList.sortList using the boolean value
+    // Set sortedList equal to return value of itemList.sortList() using the boolean value
+  }
+
+  public void dateSortClicked(ActionEvent actionEvent) {
+    // Call dateSort()
+    // Call refresh()
+    // Set items in display equal to sortedList
+  }
+
+  public void dateSort() {
+    // If itemDisplay is already showing sortedList
+      // Set sortedList equal to the original list, un-sorting it
+      // Return
+    // Set sortedList equal to return value of itemList.sortByDate()
   }
 }

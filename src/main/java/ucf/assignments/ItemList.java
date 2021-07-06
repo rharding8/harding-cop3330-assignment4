@@ -43,4 +43,11 @@ public class ItemList {
     // Return new List
     return null;
   }
+
+  public ObservableList<Item> sortByDate() {
+    // Create new ObservableList and set equal to items
+    // Sort the new list by the "date" string of each item in ascending order
+    // Return new list
+    return null;
+  }
 }

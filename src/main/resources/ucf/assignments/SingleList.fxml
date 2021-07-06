@@ -29,11 +29,12 @@
             <TextField fx:id="pathField" layoutX="139.0" layoutY="12.0" prefHeight="26.0" prefWidth="680.0" promptText="File Path:" />
          </children>
       </AnchorPane>
-      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="891.0">
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="850.0">
          <children>
-            <Button fx:id="removeButton" layoutX="357.0" layoutY="13.0" mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Remove" />
-            <Button fx:id="backButton" layoutX="688.0" layoutY="12.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Back" />
-            <Button fx:id="updateButton" layoutX="44.0" layoutY="13.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="26.0" prefWidth="89.0" text="Update Item" />
+            <Button fx:id="removeButton" layoutX="270.0" layoutY="13.0" mnemonicParsing="false" onAction="#removeButtonClicked" prefHeight="26.0" prefWidth="78.0" text="Remove" />
+            <Button fx:id="backButton" layoutX="725.0" layoutY="13.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="26.0" prefWidth="80.0" text="Back" />
+            <Button fx:id="updateButton" layoutX="45.0" layoutY="13.0" mnemonicParsing="false" onAction="#updateButtonClicked" prefHeight="26.0" prefWidth="89.0" text="Update Item" />
+            <Button fx:id="dateSortButton" layoutX="495.0" layoutY="13.0" mnemonicParsing="false" onAction="#dateSortClicked" prefHeight="26.0" prefWidth="89.0" text="Sort By Date" />
          </children>
       </AnchorPane>
    </items>
